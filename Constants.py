@@ -52,8 +52,8 @@ CAMERA_INIT_TIME = 2
 CHIME_ENABLED = True
 
 # Define times to start motion detection
-OPERATION_START_TIME = 22
-OPERATION_END_TIME = 8
+OPERATION_START_TIME = 6
+OPERATION_END_TIME = 23
 
 # ------Motion detection settings end------
 

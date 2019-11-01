@@ -167,22 +167,3 @@ class Server(threading.Thread):
         self.threshFrame = None  # Visual representation of movement detection
 
         self.camera.reset()
-
-
-if __name__ == '__main__':
-    server = Server()
-
-    server.start()
-
-    logging.basicConfig(level=logging.INFO)
-
-    # server.camera.recordForTime(15, 'testTimer.avi')
-
-    while server.running:
-        if server.threshFrame is not None:
-            cv2.imshow('Thresh', server.threshFrame)
-            if cv2.waitKey(1) & 0xFF == ord('q'):
-                break
-
-        time.sleep(.1)
-        pass

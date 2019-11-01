@@ -87,7 +87,7 @@ class Camera:
         self.recording = True
 
         if CHIME_ENABLED:
-            playsound('../Detection/chime.wav', False)
+            playsound('Detection/chime.wav', False)
 
         logging.info('Started Recording')
 
